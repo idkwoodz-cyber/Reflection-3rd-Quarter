@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT E-PORTFOLIO</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url(green.jpg);
+      background-repeat: no-repeat;
+      background-size:1374px 1374px;
+      color: #333;
+  }   
+
+    /* Header Styling */
+    header {
+      background-color: #206020;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    button {
+      padding: 0px 14px;
+      background-color: white;
+      color: #206020;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #777;
+    }
+
+    /* Main Layout */
+    .main-container {
+      display: flex;
+      flex: 1;
+      padding: 20px;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Sidebar Styling */
+    .sidebar {
+      background-color: #206020;
+      width: 250px;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      display: none; /* Initially hidden */
+      position: sticky;
+      top: 20px;
+    }
+
+    .sidebar h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-weight: bold;
+      font-size: 16px;
+      display: block;
+      transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      color: #ff6f61;
+    }
+
+    /* Content Styling */
+    .content {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content h3 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+
+    }
+
+    .content ol {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #206020;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>4th Quarter E-portfolio</h1>
+  <button onclick="toggleSidebar()">ᯓ★ Directory</button>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <h3>Directory</h3>
+      <ul>
+        <li><a href="https://idkwoodz-cyber.github.io/E-Portfolio-2nd-Quarter/" target="_blank">Previous E-Portfolio's</a></li> <br>
+        <li><a href="link" target="_blank">Homepage</a></li>
+        <li><a href="link" target="_blank">School Activities</a></li>
+        <li><a href="link" target="_blank">Sample Coding</a></li>
+	<li><a href="link" target="_blank">Reflection</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+      <h2>4th Quarter Reflection</h2>
+      <p>This fourth quarter in ICT, I was able to learn more about Javascript coding and what it was able to do. How it could function, execute, and show in a browser output. I hope to use the skills taught in each lessons to execute and present a better code that will help improve my website design. I’m eager to learn more about how to code and more scripts on Javascript coding. Although this school year is closing and coming to it's end, I will never forget the lessons that were taught to me. I hope to use these codes to improve my coding mentality, and I would like to thank our ICT teacher, Ms. Uminga, for being so dedicated to teach us these codes. I would like to conclude that, I'm glad that ICT has helped me discover coding.
+</p>
+
+          </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Santino Castillo | 9-Family</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      if (sidebar.style.display === "none" || sidebar.style.display === "") {
+        sidebar.style.display = "block";
+      } else {
+        sidebar.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
+
